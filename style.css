@@ -53,7 +53,7 @@ main{
    border: 2px solid white;
 }
 
-.heading-theme a{
+.heading-theme .dom{
     font-size: 20px;
     text-transform: uppercase;
     color: white;
