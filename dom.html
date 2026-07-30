@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTML to Screen</title>
+    <link rel="stylesheet" href="dom.css" />
+  </head>
+
+  <body>
+    <div class="back">
+        <a href="/index.html">Back To App</a>
+    </div>
+    <h1>HTML Rendering Pipeline</h1>
+
+    <div class="box">HTML File</div>
+    <div class="arrow">↓</div>
+
+    <div class="box">Parsing</div>
+    <div class="arrow">↓</div>
+
+    <div class="box">Tokenization</div>
+    <div class="arrow">↓</div>
+
+    <div class="box">DOM Tree</div>
+    <div class="arrow">↓</div>
+
+    <div class="box">CSSOM Tree</div>
+    <div class="arrow">↓</div>
+
+    <div class="box">Render Tree</div>
+    <div class="arrow">↓</div>
+
+    <div class="box">Layout</div>
+    <div class="arrow">↓</div>
+
+    <div class="box">Paint</div>
+    <div class="arrow">↓</div>
+
+    <div class="box">Screen</div>
+
+    <h2>How the Browser Converts HTML into a Web Page</h2>
+
+    <ul class="process">
+      <li>
+        When we open a website, the browser does not display the HTML code
+        directly.
+      </li>
+
+      <li>
+        It first reads the HTML file and understands the structure of the page.
+      </li>
+
+      <li>
+        This process is called <strong>Parsing</strong>. During parsing, the
+        browser breaks the HTML into small pieces called
+        <strong>Tokens</strong>.
+      </li>
+
+      <li>
+        Next, the browser creates a
+        <strong>DOM (Document Object Model)</strong> Tree from the HTML and a
+        <strong>CSSOM (CSS Object Model)</strong> Tree from the CSS.
+      </li>
+
+      <li>
+        The DOM contains the structure of the webpage, while the CSSOM contains
+        all the styling information.
+      </li>
+
+      <li>
+        After that, the browser combines the DOM Tree and CSSOM Tree to create
+        the <strong>Render Tree</strong>.
+      </li>
+
+      <li>
+        It then performs <strong>Layout</strong>, where it calculates the size
+        and position of every element.
+      </li>
+
+      <li>
+        Finally, the browser performs <strong>Paint</strong>, which draws all
+        the text, colors, images, and borders on the screen. At this point, the
+        complete webpage becomes visible to the user.
+      </li>
+    </ul>
+
+    <h3>Summary</h3>
+
+    <ul class="process">
+      <li><strong>HTML → DOM Tree:</strong> Builds the webpage structure.</li>
+
+      <li><strong>CSS → CSSOM Tree:</strong> Adds style information.</li>
+
+      <li>
+        <strong>DOM + CSSOM → Render Tree → Layout → Paint → Screen:</strong>
+        The browser combines everything, calculates positions, draws the page,
+        and finally displays it on the screen.
+      </li>
+    </ul>
+  </body>
+</html>

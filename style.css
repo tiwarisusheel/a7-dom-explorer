@@ -1,0 +1,217 @@
+:root, .theme-change[data-theme="light"]{
+    --bg-color: darkorange;
+}
+
+.theme-change[data-theme="dark"]{
+    --bg-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+   
+}
+
+main{
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-div{
+    background-color: var(--bg-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0px;
+}
+
+.heading-theme{
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-theme button{
+   all: unset;
+   cursor: pointer;
+   background-color:aquamarine;
+   padding: 5px 40px;
+   border-radius: 50px;
+   border: 2px solid white;
+}
+
+.heading-theme a{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+form{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    background-color: rgb(86, 10, 26);
+    width: 50%;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    height: 180px;
+}
+
+.form-h1{
+    color: white;
+}
+
+input{
+    border: none;
+    outline: none;
+    width: 70%;
+    height: 40px;
+    background-color: rgb(86, 10, 26);
+    font-size: 18px;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+input:focus{
+    outline: 1px solid white;
+}
+
+input::placeholder{
+    color: white;
+}
+
+label{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+}
+
+select{
+    font-size: 24px;
+    background-color: rgb(86, 10, 26);
+    color: white;
+}
+
+.add-task{
+    all: unset;
+    padding: 15px;
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-task:hover{
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+}
+
+.green{
+    all: unset;
+    padding: 15px;
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 30px;
+    height: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.green:hover{
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+}
+
+.red{
+    all: unset;
+    padding: 15px;
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 40px;
+    height: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.red:hover{
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}
+
+
+.tasks{
+    background-color: rgb(86, 10, 26);
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-card{
+    border: 1px solid white;
+    border-radius: 10px;
+    min-height: auto;
+    height: fit-content;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-div{
+    all: unset;
+    padding: 15px;
+    background-color: darkcyan;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    height: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.category-div:hover{
+    background-color: white;
+    color: darkcyan;
+    border: 2px solid darkcyan;
+}
+
+
+.card-buttons{
+    display: flex;
+    gap: 5px;
+}
+
+.task{
+    color: white;
+    margin-bottom: 10px;
+    word-break: break-word;
+    overflow-wrap: break-word; 
+}

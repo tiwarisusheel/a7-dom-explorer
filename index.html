@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="theme-change">
+        <div class="form-div">
+            <div class="heading-theme">
+                <h1 class="form-h1">Task Manager</h1>
+                <a href="./dom.html">dom</a>
+                <button class="theme-toggle">🌙 Dark Mode</button>
+            </div>
+         <form action="">
+        <input required type="text" id="input-task" placeholder="Enter your task">
+        <div>
+            <label for="categories">Choose your category:-</label>
+            <select name="category" id="category">
+               <option value="Health & Wellness">Health & Wellness</option>
+               <option value="Personal Admin">Personal Admin</option>
+               <option value="Home & Household">Home & Household</option>
+               <option value="Career & School">Career & School</option>
+               <option value="Hobbies & Creativity">Hobbies & Creativity</option>
+               <option value="Social & Family">Social & Family</option>
+            </select>
+        </div>
+        <button class="add-task" type="submit">Add Task</button>
+    </form>
+        </div>
+    <div class="tasks"></div>
+</main>
+    <script src="./script.js"></script>
+</body>
+</html>
