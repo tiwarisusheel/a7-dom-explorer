@@ -7,7 +7,7 @@
 
   <body>
     <div class="back">
-        <a href="index.html">Back To App</a>
+      <a href="index.html">Back To App</a>
     </div>
     <h1>HTML Rendering Pipeline</h1>
 
@@ -96,5 +96,26 @@
         and finally displays it on the screen.
       </li>
     </ul>
+    <h1>Event Bubbling:- Check the console while clicking</h1>
+    <div class="events" id="grandparent">
+      Grandparent
+
+      <div class="events" id="parent">
+        Parent
+
+        <button id="child">Click Me</button>
+      </div>
+    </div>
+    <h1>Event Propagation:- Check the console while clicking</h1>
+    <div class="events" id="grandparent2">
+      Grandparent
+
+      <div class="events" id="parent2">
+        Parent
+
+        <button id="child2">Click Me</button>
+      </div>
+    </div>
+    <script src="./dom.js"></script>
   </body>
 </html>

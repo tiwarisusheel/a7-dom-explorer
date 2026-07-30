@@ -54,9 +54,18 @@ main{
 }
 
 .heading-theme a{
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
     color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.heading-theme a:hover{
+    color: crimson;
+    border-color: crimson;
 }
 
 
